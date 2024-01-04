@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.coursework {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  width: 250px;
+}
