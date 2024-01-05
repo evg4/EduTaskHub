@@ -26,7 +26,7 @@ function AddNewCoursework(props) {
         <br></br>
         <label htmlFor="deadline">Deadline:</label>
         <br></br>
-        <input name="deadline" id="deadline" type="text" /*required*/></input>
+        <input name="deadline" id="deadline" type="date" /*required*/></input>
         <br></br>
         <label htmlFor="class">Class:</label>
         <br></br>
