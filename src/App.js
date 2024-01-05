@@ -3,8 +3,11 @@ import {
   addCoursework,
   removeCoursework,
 } from "./features/coursework/courseworkSlice";
+import { changeView } from "./features/view/viewSlice";
+import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
+import View from "./features/view/View";
 import Coursework from "./features/coursework/Coursework";
 import AddNewCoursework from "./features/addNewCoursework/AddNewCoursework";
 
@@ -31,12 +34,17 @@ function App({ state, dispatch }) {
     document.getElementById("class").value = "";
   }
 
+  function handleChangeView(e) {
+    let view = e.target.innerHTML;
+    dispatch(changeView(view));
+  }
+
   return (
-    <>
+    <div className={styles.app}>
       <Header></Header>
-      <Nav></Nav>
-      <Coursework onSubmit={handleAddCoursework} state={state}></Coursework>
-    </>
+      <Nav onClick={handleChangeView} state={state}></Nav>
+      <View onSubmit={handleAddCoursework} state={state}></View>
+    </div>
   );
 }
 
