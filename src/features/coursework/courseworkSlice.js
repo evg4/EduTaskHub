@@ -4,33 +4,37 @@ const options = {
   name: "coursework",
   initialState: [
     {
+      id: 1,
       title: "Essay",
       instructions: "Write 2000 words on Shakespeare.",
-      deadline: "01 Feb 2024",
+      deadline: "2024-01-05",
       schoolClass: "Year 11",
       assigned: false,
       pastDeadline: false,
     },
     {
+      id: 2,
       title: "Presentation",
       instructions: "Topic of your choice. Use PowerPoint.",
-      deadline: "01 March 2024",
+      deadline: "2024-01-05",
       schoolClass: "Year 10",
       assigned: false,
       pastDeadline: true,
     },
     {
+      id: 3,
       title: "Group task",
       instructions: "Maximum 5 people.",
-      deadline: "15 Jan 2024",
+      deadline: "2024-01-05",
       schoolClass: "Year 11",
       assigned: true,
       pastDeadline: false,
     },
     {
+      id: 4,
       title: "Essay 2",
       instructions: "Write 2000 words on a poet of your choice.",
-      deadline: "01 April 2024",
+      deadline: "2024-01-05",
       schoolClass: "Year 11",
       assigned: false,
       pastDeadline: false,
@@ -42,7 +46,7 @@ const options = {
     },
     removeCoursework: (state, action) => {
       return state.filter((coursework) => {
-        return coursework.name !== action.payload;
+        return coursework.title !== action.payload;
       });
     },
   },

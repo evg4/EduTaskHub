@@ -13,4 +13,23 @@
   padding: 5px;
   margin: 5px;
   width: 250px;
+  display: flex;
+}
+
+.info {
+  width: 230px;
+}
+
+.x {
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+}
+
+.x:hover {
+  cursor: pointer;
 }
