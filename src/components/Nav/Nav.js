@@ -2,8 +2,8 @@ import styles from "./Nav.module.css";
 
 function Nav() {
   return (
-    <nav>
-      <ul className={styles.nav}>
+    <nav className={styles.nav}>
+      <ul>
         <li>Coursework</li>
         <li>Students</li>
         <li>Forum</li>

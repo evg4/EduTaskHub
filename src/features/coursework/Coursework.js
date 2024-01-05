@@ -3,7 +3,7 @@ import AddNewCoursework from "../addNewCoursework/AddNewCoursework";
 
 function Coursework(props) {
   return (
-    <section>
+    <section className={styles.section}>
       <h2>Coursework</h2>
       <div className={styles.container}>
         {props.state.coursework.map((coursework) => {
@@ -12,7 +12,7 @@ function Coursework(props) {
               <h3>{coursework.title}</h3>
               <p>Instructions: {coursework.instructions}</p>
               <p>Deadline: {coursework.deadline}</p>
-              <p>Class: {coursework.class}</p>
+              <p>Class: {coursework.schoolClass}</p>
               <p>
                 {coursework.assigned
                   ? "Already assigned to students."

@@ -6,7 +6,7 @@ function AddNewCoursework(props) {
   }
 
   return (
-    <section>
+    <section className={styles.section}>
       <h3 onClick={toggleForm}>Add new coursework</h3>
       <form onSubmit={props.onSubmit} className={styles.form}>
         <label htmlFor="title">Title:</label>

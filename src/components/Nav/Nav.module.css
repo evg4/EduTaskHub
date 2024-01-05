@@ -1,5 +1,26 @@
 .nav {
+  background-color: rgb(231, 229, 229);
+  border-radius: 4px;
+  width: 100%;
+  height: max-content;
+  padding: 5px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.nav li {
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 30%;
+  text-align: center;
+  padding: 5px;
 }
