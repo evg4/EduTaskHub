@@ -1,3 +1,5 @@
+import styles from "./Footer.module.css";
+
 function Footer() {
   let now = new Date();
   //let dateTime = now.toLocaleDateString();
@@ -8,7 +10,7 @@ function Footer() {
   //console.log(fullDate);
   return (
     <footer>
-      <p>Today's date: {fullDate}</p>
+      <p className={styles.footer}>Today's date: {fullDate}</p>
     </footer>
   );
 }
