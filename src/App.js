@@ -9,8 +9,6 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import View from "./features/view/View";
-import Coursework from "./features/coursework/Coursework";
-import AddNewCoursework from "./features/addNewCoursework/AddNewCoursework";
 
 function App({ state, dispatch }) {
   function handleRemoveCoursework(e) {
@@ -33,7 +31,7 @@ function App({ state, dispatch }) {
     console.log(deadline);
     dispatch(
       addCoursework({
-        /*need a way to get id!!*/
+        /*need a way to get id!*/
         title,
         instructions,
         deadline,

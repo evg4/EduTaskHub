@@ -4,7 +4,7 @@ function Students() {
   return (
     <section className={styles.section}>
       <h2>Students</h2>
-      <p>Student info to display here.</p>
+      <p>Currently no student info to display.</p>
     </section>
   );
 }
