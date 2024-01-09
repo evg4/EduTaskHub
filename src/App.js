@@ -3,6 +3,7 @@ import {
   addCoursework,
   removeCoursework,
 } from "./features/coursework/courseworkSlice";
+import { toggleView } from "./features/addNewCoursework/addNewCourseworkSlice";
 import { changeView } from "./features/view/viewSlice";
 import styles from "./App.module.css";
 import Header from "./components/Header/Header";
@@ -11,6 +12,14 @@ import Footer from "./components/Footer/Footer";
 import View from "./features/view/View";
 
 function App({ state, dispatch }) {
+  function showCourseworkForm() {
+    if (state.addNewCoursework === "hide_form") {
+      dispatch(toggleView("show_form"));
+    } else {
+      dispatch(toggleView("hide_form"));
+    }
+  }
+
   function handleRemoveCoursework(e) {
     let courseworkToRemove = e.target.id;
     if (
@@ -28,10 +37,8 @@ function App({ state, dispatch }) {
     let instructions = document.getElementById("instructions").value;
     let deadline = document.getElementById("deadline").value;
     let schoolClass = document.getElementById("class").value;
-    console.log(deadline);
     dispatch(
       addCoursework({
-        /*need a way to get id!*/
         title,
         instructions,
         deadline,
@@ -58,6 +65,7 @@ function App({ state, dispatch }) {
       <View
         onRemove={handleRemoveCoursework}
         onSubmit={handleAddCoursework}
+        onShow={showCourseworkForm}
         state={state}
       ></View>
       <Footer />

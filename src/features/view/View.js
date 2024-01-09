@@ -8,6 +8,7 @@ function View(props) {
       <Coursework
         onRemove={props.onRemove}
         onSubmit={props.onSubmit}
+        onShow={props.onShow}
         state={props.state}
       />
     );
