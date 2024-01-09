@@ -9,6 +9,8 @@ function Coursework(props) {
         {props.state.coursework.map((coursework) => {
           return (
             <div key={coursework.id} className={styles.coursework}>
+              {" "}
+              {/*change key back to title if i can't get a unique id*/}
               <div className={styles.info}>
                 <h3>{coursework.title}</h3>
                 <p>Instructions: {coursework.instructions}</p>
