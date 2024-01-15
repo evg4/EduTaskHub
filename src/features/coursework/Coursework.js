@@ -1,5 +1,5 @@
 import styles from "./Coursework.module.css";
-import AddNewCoursework from "../addNewCoursework/AddNewCoursework.js";
+import AddNewCoursework from "../AddNewCoursework/AddNewCoursework.js";
 
 function Coursework(props) {
   return (

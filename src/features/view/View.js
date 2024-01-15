@@ -1,6 +1,6 @@
-import Coursework from "../coursework/Coursework";
-import Students from "../students/Students";
-import Forum from "../forum/Forum";
+import Coursework from "../Coursework/Coursework";
+import Students from "../Students/Students";
+import Forum from "../Forum/Forum";
 
 function View(props) {
   if (props.state.view === "Coursework") {

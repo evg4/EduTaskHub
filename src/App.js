@@ -2,14 +2,14 @@ import React from "react";
 import {
   addCoursework,
   removeCoursework,
-} from "./features/coursework/courseworkSlice";
-import { toggleView } from "./features/addNewCoursework/addNewCourseworkSlice";
-import { changeView } from "./features/view/viewSlice";
+} from "./features/Coursework/courseworkSlice";
+import { toggleView } from "./features/AddNewCoursework/addNewCourseworkSlice";
+import { changeView } from "./features/View/viewSlice";
 import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
-import View from "./features/view/View";
+import View from "./features/View/View";
 
 function App({ state, dispatch }) {
   function showCourseworkForm() {
