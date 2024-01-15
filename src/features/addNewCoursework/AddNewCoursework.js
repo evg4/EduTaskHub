@@ -35,6 +35,7 @@ function AddNewCoursework(props) {
           <br></br>
           <input name="class" id="class" type="text" /*required*/></input>
           <br></br>
+          <br></br>
           <button>Add</button>
         </form>
       </section>
