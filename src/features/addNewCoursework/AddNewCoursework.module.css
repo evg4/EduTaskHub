@@ -1,21 +1,28 @@
-.section {
+.section,
+.sectionhidden {
   border: 1px solid grey;
   border-radius: 4px;
   width: max-content;
   margin: 5px;
 }
 
-.section h3 {
+.section h3,
+.sectionhidden h3 {
   padding: 0 5px;
   width: max-content;
   text-align: center;
   margin: 5px auto;
 }
 
+.sectionhidden:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+
 .section h3:hover {
   cursor: pointer;
 }
-
 .form {
   display: block;
   padding: 5px;

@@ -3,7 +3,7 @@ import styles from "./AddNewCoursework.module.css";
 function AddNewCoursework(props) {
   if (props.state.addNewCoursework === "hide_form") {
     return (
-      <section className={styles.section}>
+      <section className={styles.sectionhidden}>
         <h3 onClick={props.onShow}>Add new coursework +</h3>
       </section>
     );

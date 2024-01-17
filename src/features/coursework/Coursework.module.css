@@ -32,4 +32,6 @@
 
 .x:hover {
   cursor: pointer;
+  background-color: grey;
+  color: white;
 }
