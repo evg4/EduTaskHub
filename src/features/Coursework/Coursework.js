@@ -5,11 +5,7 @@ function Coursework(props) {
   return (
     <section className={styles.section}>
       <h2>Coursework</h2>
-      <AddNewCoursework
-        state={props.state}
-        onShow={props.onShow}
-        onSubmit={props.onSubmit}
-      />
+      <AddNewCoursework onSubmit={props.onSubmit} />
       <div className={styles.container}>
         {props.state.coursework.map((coursework) => {
           return (
