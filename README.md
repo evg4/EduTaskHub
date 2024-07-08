@@ -36,7 +36,7 @@ I was focussing on the funcionality, so the design is very basic. If I were to t
 ## How to use
 You can view this website at https://edutaskhub.netlify.app/. Use the tabs at the top to navigate to different pages. On the "Coursework" page, clicking "Add New Coursework" toggles the form, which can then be used to add more tiles to the display. Use the X button in the corner of each tile to delete it.
 ## Credits
-Thanks to Jade Wilson (https://github.com/Jade-Codes), whom I forked this repo from, and who helped me with problems I faced when workign on this project.
+Thanks to Jade Wilson (https://github.com/Jade-Codes), whom I forked this repo from, and who helped me with problems I faced when working on this project.
 
 
 
